@@ -1,0 +1,155 @@
+.nav {
+  display: flex;
+  align-items: center;
+  padding-inline: 8%;
+  padding-block: 1.5rem;
+  margin-bottom: 4rem;
+  /* position: -webkit-sticky; */
+  /* position: fixed; */
+  top: 0;
+  transition: all 0.4s;
+}
+.menu-btn {
+  display: none;
+}
+.nav a {
+  transform: all 0.5s;
+}
+.sticky {
+  background-color: var(--btn-primary);
+  color: white;
+  z-index: 2;
+}
+.sticky li > a {
+  color: white;
+}
+.sticky div > button {
+  background-color: var(--bg-secondary);
+}
+.nav a {
+  color: black;
+}
+.nav-logo,
+.nav-links-container,
+.nav-button {
+  width: 33.33%;
+}
+.nav-logo > button {
+  display: none;
+}
+.nav-links-container {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+}
+.nav-button {
+  display: flex;
+  justify-content: end;
+  font-size: 0.9rem;
+}
+.nav-button button {
+  border: 1px solid var(--btn-primary);
+  color: var(--btn-primary);
+  padding-block: 0.8rem;
+  border-radius: 0.25rem;
+  font-weight: 700;
+  padding-inline: 1rem;
+  transition: all 0.4s;
+}
+.nav-button button:hover {
+  background-color: var(--btn-primary);
+  border-color: white;
+  color: white;
+}
+/* Responsive Header Start */
+@media (min-width: 661px) {
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  .hold {
+    overflow: initial;
+  }
+}
+@media (max-width: 991px) {
+  .nav-links-container {
+    /* background-color: teal; */
+    width: 80%;
+  }
+}
+@media (max-width: 660px) {
+  .menu-btn {
+    display: block;
+    padding-left: 1rem;
+    width: 50px;
+    height: 50px;
+  }
+  .menu-btn img {
+    width: 100%;
+    height: 100%;
+  }
+  .nav {
+    position: absolute;
+    flex-wrap: wrap;
+    height: 100%;
+    top: -100%;
+    background-color: #333;
+  }
+  .nav-logo,
+  .nav-links-container,
+  .nav-button {
+    width: 100%;
+  }
+  .nav-links-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .nav-links-container {
+    padding-inline: 0;
+  }
+  .nav-links-container li {
+    width: 100%;
+    text-align: center;
+    padding-inline: 0;
+    margin-block: 1rem;
+  }
+  .nav-links-container li a {
+    color: white;
+  }
+  .nav-button {
+    display: flex;
+    justify-content: center;
+  }
+  .nav-button button {
+    width: 80%;
+    font-size: 1.1rem;
+    padding-block: 1rem;
+  }
+  .nav-logo {
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav-logo > button {
+    display: inline;
+  }
+  .nav-logo > button {
+    background-color: white;
+    border-radius: 100%;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+  }
+  .nav-logo > button img {
+    width: 100%;
+    height: 100%;
+  }
+  .show-nav {
+    top: 0;
+  }
+  .hold {
+    overflow: hidden;
+  }
+}
+
+/* Responsive Header End */

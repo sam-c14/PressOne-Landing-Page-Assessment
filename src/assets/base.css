@@ -1,0 +1,120 @@
+/* color palette from <https://github.com/vuejs/theme> */
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import "../assets/fonts/recoleta/stylesheet.css";
+
+:root {
+  --btn-primary: #0e99d2;
+  --bg-secondary: #f3f8fe;
+  --bg-footer: #fef8e7;
+}
+
+/* semantic color variables for this project */
+:root {
+  --color-background: var(--vt-c-white);
+  --color-background-soft: var(--vt-c-white-soft);
+  --color-background-mute: var(--vt-c-white-mute);
+
+  --color-border: var(--vt-c-divider-light-2);
+  --color-border-hover: var(--vt-c-divider-light-1);
+
+  --color-heading: var(--vt-c-text-light-1);
+  --color-text: var(--vt-c-text-light-1);
+
+  --section-gap: 160px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: var(--vt-c-black);
+    --color-background-soft: var(--vt-c-black-soft);
+    --color-background-mute: var(--vt-c-black-mute);
+
+    --color-border: var(--vt-c-divider-dark-2);
+    --color-border-hover: var(--vt-c-divider-dark-1);
+
+    --color-heading: var(--vt-c-text-dark-1);
+    --color-text: var(--vt-c-text-dark-2);
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+/* 
+body {
+  color: var(--color-text);
+  background: var(--color-background);
+  transition: color 0.5s, background-color 0.5s;
+  line-height: 1.6;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+} */
+
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+button {
+  background-color: transparent;
+  border: none;
+}
+.urbanist-font {
+  font-family: "Urbanist", sans-serif;
+}
+.recoleta-font {
+  font-family: "Recoleta";
+}
+.font-lighter {
+  font-weight: 100;
+}
+.font-light {
+  font-weight: 200;
+}
+.font-normal {
+  font-weight: 300;
+}
+.font-mid {
+  font-weight: 400;
+}
+.font-extra-mid {
+  font-weight: 500;
+}
+.font-semibold {
+  font-weight: 600;
+}
+.font-bold {
+  font-weight: 700;
+}
+.font-bolder {
+  font-weight: 800;
+}
+.font-extra-bold {
+  font-weight: 900;
+}
+.primary-text {
+  color: var(--btn-primary);
+}
+.primary-bg {
+  background-color: var(--btn-primary);
+}
+.secondary-bg {
+  background-color: var(--bg-secondary);
+}
+.text-white {
+  color: white;
+}
