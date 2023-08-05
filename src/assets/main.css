@@ -417,6 +417,9 @@
 
 /* Responsive Layouts Start */
 @media (min-width: 1920px) {
+  .stats-container {
+    padding-inline: 8%;
+  }
   .stats-card-icon-container {
     left: 40%;
   }
