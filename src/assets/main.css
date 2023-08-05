@@ -26,13 +26,13 @@
   font-weight: 700;
   font-family: "Recoleta";
   margin-top: 1rem;
-  width: 100%;
+  width: 70%;
   margin-bottom: 1rem;
 }
 .hero-info p {
   font-size: 1.2rem;
   font-weight: 500;
-  width: 100%;
+  width: 75%;
   line-height: 1.8rem;
   margin-bottom: 2rem;
 }
@@ -164,17 +164,16 @@
   border-radius: 1rem;
   padding-bottom: 1rem;
   background-color: var(--bg-secondary);
-  /* background-color: red; */
 }
 .card-body ul {
   margin-top: 1.5rem;
   padding-inline: 1rem;
   border-radius: 1.5rem;
   background-color: var(--bg-secondary);
+  padding-bottom: 1.2rem;
 }
 .card-body ul li {
   display: flex;
-  /* align-items: center; */
   gap: 0.2rem;
   line-height: 1.8rem;
   text-align: start;
@@ -444,6 +443,9 @@
 }
 
 @media (max-width: 1199px) {
+  .hero-container {
+    padding-inline: 3rem;
+  }
   .stats-container {
     height: 100vh;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -454,6 +456,10 @@
   }
   .benefits-container {
     padding-inline: 3rem;
+  }
+  .card-body ul {
+    padding-bottom: 1.2rem;
+    background-color: var(--bg-secondary);
   }
   .plans {
     height: 100vh;

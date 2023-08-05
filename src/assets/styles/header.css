@@ -42,6 +42,14 @@
   justify-content: space-between;
   font-weight: 600;
 }
+.nav-links-container li {
+  transition: all 0.4s;
+  padding-bottom: 0.2rem;
+  border-bottom: 1px solid transparent;
+}
+.nav-links-container li:hover {
+  border-bottom: 1px solid black;
+}
 .nav-button {
   display: flex;
   justify-content: end;
