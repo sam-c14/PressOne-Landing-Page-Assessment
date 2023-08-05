@@ -416,7 +416,7 @@
 /* Footer Styles End */
 
 /* Responsive Layouts Start */
-@media (min-width: 1920px) {
+@media screen and (min-width: 1920px) {
   .stats-container {
     padding-inline: 8%;
   }
@@ -448,7 +448,7 @@
   }
 }
 
-@media (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .hero-container {
     padding-inline: 3rem;
   }
@@ -489,7 +489,7 @@
   }
 }
 
-@media (max-width: 991px) {
+@media screen and (max-width: 991px) {
   .hero-container {
     flex-wrap: wrap-reverse;
     margin-bottom: 1rem;
@@ -576,7 +576,7 @@
     width: 50%;
   }
 }
-@media (max-width: 660px) {
+@media screen and (max-width: 660px) {
   .hero-container {
     margin-top: 2rem;
     padding-inline: 1rem;

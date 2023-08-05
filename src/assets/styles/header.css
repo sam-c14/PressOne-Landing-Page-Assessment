@@ -81,13 +81,13 @@
     overflow: initial;
   }
 }
-@media (max-width: 991px) {
+@media screen and (max-width: 991px) {
   .nav-links-container {
     /* background-color: teal; */
     width: 80%;
   }
 }
-@media (max-width: 660px) {
+@media screen and (max-width: 660px) {
   .menu-btn {
     display: block;
     padding-left: 1rem;

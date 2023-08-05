@@ -1,7 +1,7 @@
 <template>
   <div class="primary-bg">
     <div class="stats-container urbanist-font">
-      <div class="stats-card" v-for="(stat, index) in stats" :key="index">
+      <div class="stats-card prim" v-for="(stat, index) in stats" :key="index">
         <div class="stats-card-icon-container">
           <div class="stats-card-icon">
             <img src="../components/icons/User3.svg" alt="user-icon" />

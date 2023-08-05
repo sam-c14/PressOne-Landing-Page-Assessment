@@ -63,7 +63,7 @@ export default {
   methods: {
     async getPlans() {
       const plan = await get("9f9dbd97-6294-43a4-ac9f-516639fb5585");
-      //   console.log(plan);
+    //   console.log(plan);
       this.plans = plan.data;
     },
   },
