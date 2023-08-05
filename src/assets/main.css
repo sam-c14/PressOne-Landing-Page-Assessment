@@ -427,6 +427,9 @@
     height: auto;
     margin-bottom: 1rem;
   }
+  .card-top-bg .benefits-card-icon {
+    top: 70%;
+  }
   .plans {
     height: auto;
     margin-block: 2rem;
